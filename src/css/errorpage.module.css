@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.errorCard {
+  background-color: var(--pop-pink);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--card-radius);
+  padding: 3rem 2rem;
+  box-shadow: none;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.errorTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--pop-red);
+  margin: 0;
+}
+
+.errorMsg {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.homeBtn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--pop-dark);
+  color: #ffffff;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--pill-radius);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: none;
+  transition: all 0.15s ease;
+}
+
+.homeBtn:hover {
+  box-shadow: none;
+}
+

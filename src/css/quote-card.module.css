@@ -1,0 +1,125 @@
+.quoteCard {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--card-radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  box-shadow: none;
+}
+
+.quoteCard:hover {
+  box-shadow: none;
+}
+
+/* Graphic Pop Theme Variants */
+.themeLilac,
+.themeMint,
+.themeCoral,
+.themePink,
+.themeOrange,
+.themeYellow {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoryBadge {
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 0;
+  background-color: transparent;
+  color: var(--border-dark);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+.themeCoral .categoryBadge {
+  background-color: transparent;
+  color: var(--border-dark);
+}
+
+.quoteIcon {
+  font-size: 1.75rem;
+  opacity: 0.85;
+}
+
+.quoteBody {
+  margin-top: 0.25rem;
+}
+
+.quoteText {
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.speakerLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  align-self: flex-start;
+  margin-top: auto;
+  opacity: 0.9;
+}
+
+.themeCoral .speakerLine {
+  background-color: transparent;
+  border: none;
+}
+
+.dash {
+  font-weight: 900;
+}
+
+.speakerName {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(24, 24, 27, 0.2);
+}
+
+.themeCoral .cardFooter {
+  border-top-color: rgba(24, 24, 27, 0.2);
+}
+
+.deleteBtn {
+  padding: 0.4rem 1rem;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--pill-radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 800;
+  box-shadow: none;
+  transition: all 0.15s ease;
+}
+
+.deleteBtn:hover {
+  background-color: var(--pop-dark);
+  color: #ffffff;
+  box-shadow: none;
+}
+

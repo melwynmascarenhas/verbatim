@@ -1,0 +1,161 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgba(245, 243, 239, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-dark);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  gap: 1rem;
+}
+
+.centerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text-main);
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  transition: transform 0.15s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logoIconBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--pop-dark);
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid var(--border-dark);
+  box-shadow: none;
+}
+
+.logoAccent {
+  font-size: 1.25rem;
+}
+
+
+.navItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: transparent;
+  border-radius: var(--pill-radius);
+  border: 1px solid transparent;
+  box-shadow: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.navItem:hover {
+  color: var(--text-main);
+  background-color: rgba(24, 24, 27, 0.05);
+  transform: none;
+  box-shadow: none;
+}
+
+.active {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-main) !important;
+  font-weight: 800 !important;
+  border: 1px solid var(--border-dark) !important;
+  box-shadow: none !important;
+}
+
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.username {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.username:hover {
+  background-color: transparent;
+  opacity: 0.8;
+  transform: none;
+  box-shadow: none;
+}
+
+.logout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.logout:hover {
+  background-color: transparent;
+  color: var(--text-main);
+  font-weight: 800;
+  transform: none;
+  box-shadow: none;
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+  .centerLinks {
+    gap: 0.5rem;
+  }
+  .navItem {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.85rem;
+  }
+}
+
+

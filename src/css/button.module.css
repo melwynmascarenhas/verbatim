@@ -1,0 +1,27 @@
+.btn {
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--pill-radius);
+  background-color: var(--pop-dark);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: none;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: none;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+

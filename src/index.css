@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Abordage';
+  src: url('/fonts/Abordage.woff2') format('woff2'),
+       url('/fonts/Abordage.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nouveau';
+  src: url('/fonts/Nouveau-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-page: #F5F3EF;
+  --bg-surface: #FFFFFF;
+  --text-main: #121212;
+  --text-muted: #52525B;
+  --text-light: #A1A1AA;
+  
+  /* Soft Desaturated Pastel Palette */
+  --pop-red: #F88D80;
+  --pop-lilac: #DDD6FE;
+  --pop-pink: #FCE7F3;
+  --pop-orange: #FED7AA;
+  --pop-mint: #CFFAFE;
+  --pop-yellow: #FEF08A;
+  --pop-green: #DCFCE7;
+  --pop-dark: #18181B;
+
+  --border-dark: #18181B;
+  --pill-radius: 9999px;
+  --card-radius: 20px;
+  
+  --shadow-pop: none;
+  --shadow-pop-sm: none;
+  --shadow-pop-lg: none;
+  --shadow-pop-subtle: none;
+
+  --sidebar-width: 260px;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: 'Abordage', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nouveau', 'Abordage', system-ui, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #71717A !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #71717A !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+}
+
+

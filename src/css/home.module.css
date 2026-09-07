@@ -1,0 +1,201 @@
+.main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: calc(85vh - 70px);
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.75rem;
+  max-width: 800px;
+  margin: auto 0;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.pillBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--pill-radius);
+  font-size: 0.85rem;
+  font-weight: 800;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-dark);
+  box-shadow: none;
+  letter-spacing: -0.01em;
+}
+
+.badgeCoral,
+.badgeLilac,
+.badgeMint {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  background-color: var(--pop-dark);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  border-radius: var(--pill-radius);
+  border: 1px solid var(--border-dark);
+  box-shadow: none;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.primaryBtn:hover {
+  background-color: #27272a;
+  opacity: 0.95;
+  box-shadow: none;
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 1.05rem;
+  font-weight: 800;
+  border-radius: var(--pill-radius);
+  border: 1px solid var(--border-dark);
+  box-shadow: none;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.secondaryBtn:hover {
+  box-shadow: none;
+  background-color: var(--bg-page);
+}
+
+/* Graphic Pop Bento Section */
+.bentoSection {
+  width: 100%;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.bentoCard {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--card-radius);
+  padding: 1.75rem;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bentoCard:hover {
+  box-shadow: none;
+}
+
+.bentoLilac,
+.bentoMint,
+.bentoCoral,
+.bentoOrange {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+}
+
+.stickerIcon {
+  font-size: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--border-dark);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.bentoCard h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.bentoCard p {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.authorTag {
+  font-size: 0.85rem;
+  font-weight: 800;
+  opacity: 0.85;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+}
+

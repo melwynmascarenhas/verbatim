@@ -1,0 +1,60 @@
+.input {
+  padding: 0.85rem 1.25rem;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--pill-radius);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  box-shadow: none;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--border-dark);
+}
+
+.textarea {
+  padding: 1.25rem;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--card-radius);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 160px;
+  resize: none;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  box-shadow: none;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--border-dark);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #71717A !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color: #71717A !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+}
+

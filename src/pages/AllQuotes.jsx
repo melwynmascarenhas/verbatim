@@ -4,7 +4,7 @@ import styles from "../css/all-quotes.module.css";
 import { useLoaderData, Await, Link } from "react-router-dom";
 import { Suspense, useState } from "react";
 import QuoteCard from "../components/QuoteCard";
-import { FunnelSimple } from "@phosphor-icons/react";
+import { FunnelSimple, Quotes } from "@phosphor-icons/react";
 
 export async function allQuotesLoader() {
 	const quotesDataPromise = getDocs(collection(db, "quotes")).then(

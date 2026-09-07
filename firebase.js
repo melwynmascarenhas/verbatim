@@ -2,13 +2,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCw2_NUywaTKJH6ar3xfpQHFJWu0TN2r8o",
-  authDomain: "npc-social-media-app.firebaseapp.com",
-  projectId: "npc-social-media-app",
-  storageBucket: "npc-social-media-app.firebasestorage.app",
-  messagingSenderId: "284979995290",
-  appId: "1:284979995290:web:ed9efc601f99e44799f523",
+  apiKey: "AIzaSyCKHaUNGha1X6aDprQa-RH7nGaeMW_S_yI",
+  authDomain: "verbatim-5fe9b.firebaseapp.com",
+  projectId: "verbatim-5fe9b",
+  storageBucket: "verbatim-5fe9b.firebasestorage.app",
+  messagingSenderId: "1088594976030",
+  appId: "1:1088594976030:web:eeeb41ce94495b1df7fd0f",
+  measurementId: "G-3CH1Q680P6"
 };
 
 const app = initializeApp(firebaseConfig);
